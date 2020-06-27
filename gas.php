@@ -48,12 +48,12 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         save("token.txt",$token);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬Auto Calim Voucher Gojek▬▬▬▬▬▬▬▬▬▬▬▬\n");
         echo "\n".color("nevy","▶️ Klaim ");
-        echo color("yellow","▶️ Hallo sydney");
+        echo color("yellow","▶️ 127.0.0.1");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"Cobagofood2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
         echo "\n".color("green","".$message);
@@ -62,12 +62,12 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         echo "\n".color("red","".$message);
 	      gocar:
         echo "\n".color("nevy","▶️ Klaim ");
-        echo color("yellow","▶️ Hallo sydney");
+        echo color("yellow","▶️ 127.0.0.1");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"Cobagofood2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","".$message);
@@ -76,7 +76,7 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         echo "\n".color("red","".$message);
         gofood:
         echo "\n".color("nevy","▶️ Klaim ");
-        echo color("yellow","▶️ Hallo sydney");
+        echo color("yellow","▶️ 127.0.0.1");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
@@ -85,7 +85,7 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","".$message);
         echo "\n".color("nevy","▶️ Klaim ");
-        echo color("yellow","▶️ Hallo sydney");
+        echo color("yellow","▶️ 127.0.0.1");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -165,7 +165,7 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
          echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"223344"}';
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "OTP PIN 6 digit : ";
          $otpsetpin = trim(fgets(STDIN));
