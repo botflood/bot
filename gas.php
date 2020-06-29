@@ -81,7 +81,7 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-MJP2W8D"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","".$message);
         echo "\n".color("nevy","▶️ Klaim ");
@@ -91,7 +91,7 @@ echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
         sleep(1);
         }
         sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"G-MJP2W8D"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green","".$messageboba09);
         sleep(3);
