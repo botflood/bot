@@ -1,10 +1,10 @@
 <<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\n\n\n\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\n\n\n\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
 echo "\e[7m\e[95m                                               \e[0m\n";
 ulang:
-echo "\e[1m\e[95m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+echo "\e[1m\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
