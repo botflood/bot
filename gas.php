@@ -1,8 +1,8 @@
 <<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\n\n\n\e[180m🅑🅛🅐🅒🅚===🅟🅐🅝🅣🅗🅔🅡\n";
-// function change(){
+echo "\n\n\n\e[95m🅑🅛🅐🅒🅚===🅟🅐🅝🅣🅗🅔🅡\n";
+// function change()
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("yellow","▶️ Nomor : ");
