@@ -1,10 +1,7 @@
 <<?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\n\n\n\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
-echo "\e[7m\e[95m                                               \e[0m\n";
-ulang:
-echo "\e[1m\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
+echo "\n\n\n\e[180m🅑🅛🅐🅒🅚===🅟🅐🅝🅣🅗🅔🅡\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -67,7 +64,7 @@ echo "\e[1m\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","".$message);
@@ -81,7 +78,7 @@ echo "\e[1m\e[95m🅑🅛🅐🅒🅚🅟🅐🅝🅣🅗🅔🅡\n";
         echo color("yellow",".");
         sleep(10);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","".$message);
         echo "\n".color("nevy","▶️ Klaim ");
